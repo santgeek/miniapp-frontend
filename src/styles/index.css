@@ -9,3 +9,9 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body {
+    background-image: linear-gradient(rgba(79, 43, 139, 1), rgba(26, 14, 46, 1));
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: "Cantarell", sans-serif;
+}
