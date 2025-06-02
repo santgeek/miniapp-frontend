@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const BASE_URL = "https://miniapp-backend-zjnn.onrender.com";
+//const BASE_URL = "https://miniapp-backend-zjnn.onrender.com";
+
+const BASE_URL = "https://probable-memory-4jgwwj6v77vwhqx56-3000.app.github.dev/";
 
 export const addUser = async (data) => {
     try {

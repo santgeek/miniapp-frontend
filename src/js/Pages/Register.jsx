@@ -7,7 +7,7 @@ export const Register = () => {
         name: "",
         email: "",
         password: ""
-    })
+    });
 
     const newUser = async (e) => {
         e.preventDefault();
@@ -28,9 +28,8 @@ export const Register = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setUserData(prevUserData => ({ ...prevUserData, [name]: value }))
+        setUserData(prevUserData => ({ ...prevUserData, [name]: value }));
     }
-
 
     return (
         <div className="container">
