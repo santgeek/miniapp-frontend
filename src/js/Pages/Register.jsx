@@ -11,6 +11,10 @@ export const Register = () => {
 
     const newUser = async (e) => {
         e.preventDefault();
+        if (userData.password.length < 6) {
+            alert("Password length must be at least 6 characters");
+            return false;
+        }
         try {
             const response = await userService.addUser(userData)
             console.log("Registration successful:", response);

@@ -18,7 +18,7 @@ export const Navbar = () => {
             setIsLoggedIn(!!token);
         }
         checkToken();
-    }, [])
+    }, [localStorage.getItem("accessToken")])
 
     return (
         <nav className="navbar navbar-expand-lg bg-navbar-custom navbar-dark">
